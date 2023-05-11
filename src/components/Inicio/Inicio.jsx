@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Inicio.css'
 
 const Inicio = () => {
-  const imgUrl = `${process.env.PUBLIC_URL}img/perfil.jpg`
+  const imgUrl = `${process.env.PUBLIC_URL}/images/perfil.jpg`
 
   const Typewriter = () => {
     const [text, setText] = useState('');
