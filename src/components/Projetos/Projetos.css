@@ -1,0 +1,68 @@
+.projetos {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.projetos h1 {
+    width: 50%;
+    font-size: 160%;
+    margin: 60px auto 20px;
+    margin-bottom: 50px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.projetos p {
+    font-weight: bold;
+}
+
+.container-iframe {
+    background-color: black;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 50vh;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 100px;
+    padding: 5px;
+    margin: 5px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media (min-width: 910px){
+    .container-iframe{
+        height: 100vh;
+    }
+
+    .container-iframe iframe {
+        height: 90%;
+        width: 70%;
+    }
+
+    .buttons button {
+        width: 200px;
+        padding: 10px;
+    }
+}

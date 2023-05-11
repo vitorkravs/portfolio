@@ -1,0 +1,171 @@
+.Inicio {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 40px 0;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.perfil-img {
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.perfil-informacoes {
+    background-color: purple;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.perfil-informacoes h2 {
+    font-size: 18px;
+}
+
+.perfil-informacoes p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sobre {
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    height: auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.sobre h1,
+.sobre p {
+    margin: 30px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sobre p {
+    font-size: 14px;
+}
+
+.blink {
+    animation: blink-animation .6s infinite;
+  }
+  
+  @keyframes blink-animation {
+    0% {
+      opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (min-width: 825px) {
+    .Inicio {
+        margin: 10px 20px;
+        height: 100vh;
+    }
+
+    .perfil {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 55%;
+        max-width: 60%;
+        margin: 60px 0 20px;
+    }
+
+    .perfil-img {
+        margin-left: 20px;
+        width: 40%;
+    }
+
+    .perfil-informacoes {
+        background-color: purple;
+        border-radius: 10px;
+        width: 50%;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .sobre {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        background-color: black;
+        border-radius: 10px;
+    }
+
+    .sobre h1,
+    .sobre p {
+        margin: 30px 20px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 995px){
+    .Inicio {
+        margin: 0 40px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .perfil {
+        flex-direction: column;
+        width: 35%;
+        height: 70%;
+        margin: 40px 100;
+        border-radius: 20px;
+    }
+    
+    .perfil-img {
+        margin: -30px 0 0 0;
+        width: 35%;
+    }
+    
+    .perfil-informacoes {
+        border-radius: 10px;
+        margin: 20px 0 40px 0;
+        padding: 10px;
+    }
+
+    .perfil-informacoes h2 {
+        font-size: 28px;
+    }
+    
+    .perfil-informacoes p {
+        font-size: 16px;
+    }
+    
+    
+    .sobre {
+        width: 60%;
+        height: 60%;
+    }
+    
+    .sobre h1,
+    .sobre p {
+        margin: 50px 40px;
+        font-size: 28px;
+    }
+    
+    .sobre p {
+        font-size: 18px;
+    }
+}
