@@ -38,8 +38,8 @@ const Projetos = () => {
   return (
     <div className='projetos'>
         <h1>Projetos</h1>
-        <p>Os desafios estão em ordem da minha evoloção, desde de um simples site usando html e css, a um projeto com react</p>
-        <p>obs: Alguns projetos nao estão responsivos para mobile, estou resolvendo isso<br /> : &frasl;</p>
+        <p>Os desafios estão em ordem da minha evoloção, desde de um simples site usando html e css, a um projeto com react.</p>
+        <p>obs: Alguns projetos não estão responsivos para mobile, estou resolvendo isso.<br /> : &frasl;</p>
         <div className='container-iframe'>
             <h3>{projetos[indice].title}</h3>
             <iframe title='slide' src={projetos[indice].url} frameBorder={0}></iframe>

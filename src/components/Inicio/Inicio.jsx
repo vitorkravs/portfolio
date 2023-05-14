@@ -34,8 +34,10 @@ const Inicio = () => {
             </div>
         </div>
         <main className='sobre'>
+          <span className='span-borda'/>
+          <span className='span-borda'/>
           <h1>Sobre mim</h1>
-          <Typewriter />
+          <Typewriter/>
         </main>
     </div>
   )

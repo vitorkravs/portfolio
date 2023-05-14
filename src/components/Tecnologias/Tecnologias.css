@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .tecnologias img {
@@ -23,16 +23,20 @@
     background-color: black;
     padding: 10px;
     border-radius: 20px;
+    box-shadow: 2px 2px 10px cyan;
 }
 
 .divisoes {
     width: 95%;
     display: flex;
+    position: relative;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 300px;
     background-color: black;
+    box-shadow: 2px 2px 10px cyan;
     margin-bottom: 20px;
     border-radius: 20px;
 }
@@ -49,6 +53,40 @@
     font-size: 85%;
     line-height: 20px;
     font-weight: bold;
+}
+
+.divisoes .span-borda:first-of-type{
+    position: absolute;
+    background: linear-gradient(to bottom, transparent, cyan);
+    top: -2px;
+    left: 0;
+    height: 5px;
+    width: 99%;
+    animation: borda1 2s linear infinite;
+}
+
+@keyframes borda1 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{transform: translateX(100%);}
+}
+
+.divisoes .span-borda:nth-of-type(2){
+    position: absolute;
+    background: linear-gradient(to bottom, transparent, cyan);
+    bottom: 0;
+    left: 0;
+    width: 99%;
+    height: 5px;
+    animation: borda2 2s linear infinite;
+}
+
+@keyframes borda2 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{transform: translateX(-100%);}
 }
 
 @media (min-width: 440px){
@@ -79,6 +117,7 @@
         background-color: black;
         border-radius: 20px;
         height: 100%;
+        box-shadow: 2px 2px 10px cyan;
     }
 
     .divisoes {
