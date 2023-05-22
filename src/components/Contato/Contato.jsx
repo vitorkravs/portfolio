@@ -44,7 +44,7 @@ const Contato = () => {
         <form className="form" ref={form} onSubmit={sendEmail}>
           <label>Nome</label>
           <input type="text" name="name" required />
-          <label>Message</label>
+          <label>Mensagem</label>
           <textarea name="message" placeholder="Digite seu email no final, para eu entrar em contato :)" required />
           <input id="button-submit" type="submit" value="Enviar" disabled={enviado} />
           <p id='p-enviado'>enviado</p>
